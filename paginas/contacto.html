@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Contáctanos - Vitrina Julieta Style">
+
+    <title>Contáctanos | Vitrina Julieta Style</title>
+
+
+    <!-- =========================================
+         HOJAS DE ESTILO
+         ========================================= -->
+
+    <!-- Variables generales -->
+    <link rel="stylesheet" href="../styles/inicio.css">
+      <link rel="stylesheet" href="../styles/var.css">
+
+    <!-- Estilos exclusivos de contacto -->
+    <link rel="stylesheet" href="../styles/contacto.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         ENCABEZADO
+         ========================================= -->
+
+    <header class="encabezado">
+
+        <div class="contenedor">
+
+            <h1 class="logo">
+                Vitrina
+                <span>Julieta Style</span>
+            </h1>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         NAVEGACIÓN PRINCIPAL
+         ========================================= -->
+
+    <nav class="navegacion" aria-label="Navegación principal">
+
+        <div class="contenedor">
+
+            <ul class="menu">
+
+                <li>
+                    <a href="../index.html" class="menu-enlace">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../paginas/catalogo.html" class="menu-enlace">
+                        Catálogo
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../paginas/contacto.html" class="menu-enlace activo">
+                        Contacto
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================================
+         CONTENIDO PRINCIPAL
+         ========================================= -->
+
+    <main>
+
+
+        <!-- =====================================
+             BANNER DE CONTACTO
+             ===================================== -->
+
+        <section class="seccion-banner">
+
+            <div class="contenedor">
+
+                <div class="banner">
+
+                    <div class="banner-contenido">
+
+                        <p class="etiqueta-banner">
+                            CONTÁCTANOS
+                        </p>
+
+                        <h2>
+                            Estamos aquí
+                            <br>
+                            para ayudarte
+                        </h2>
+
+                        <p class="descripcion-banner">
+                            Si tienes alguna duda, sugerencia
+                            o necesitas más información,
+                            no dudes en escribirnos.
+                        </p>
+
+                    </div>
+
+
+                    <figure class="banner-imagen">
+
+                        <img
+                            src="../img/banner_contacto.png"
+                            alt="Espacio de trabajo de Vitrina Julieta Style"
+                        >
+
+                    </figure>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             INFORMACIÓN DE CONTACTO
+             ===================================== -->
+
+        <section class="seccion-contacto">
+
+            <div class="contenedor contacto-grid">
+
+
+                <!-- =================================
+                     FORMULARIO
+                     ================================= -->
+
+                <article class="formulario-contenedor">
+
+                    <div class="encabezado-formulario">
+
+                        <span class="icono-formulario">
+                            ✈
+                        </span>
+
+                        <div>
+
+                            <h2>
+                                Envíanos un mensaje
+                            </h2>
+
+                            <p>
+                                Completa el formulario y te
+                                responderemos lo más pronto posible.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <form class="formulario" action="#" method="post">
+
+
+                        <!-- Nombre -->
+
+                        <div class="campo">
+
+                            <label for="nombre">
+                                Nombre completo *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nombre"
+                                name="nombre"
+                                placeholder="Nombre completo"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Correo -->
+
+                        <div class="campo">
+
+                            <label for="correo">
+                                Correo electrónico *
+                            </label>
+
+                            <input
+                                type="email"
+                                id="correo"
+                                name="correo"
+                                placeholder="Correo electrónico"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Asunto -->
+
+                        <div class="campo campo-completo">
+
+                            <label for="asunto">
+                                Asunto *
+                            </label>
+
+                            <select
+                                id="asunto"
+                                name="asunto"
+                                required
+                            >
+
+                                <option value="">
+                                    Selecciona un asunto
+                                </option>
+
+                                <option value="informacion">
+                                    Información sobre productos
+                                </option>
+
+                                <option value="pedido">
+                                    Consulta sobre pedido
+                                </option>
+
+                                <option value="disponibilidad">
+                                    Disponibilidad de productos
+                                </option>
+
+                                <option value="otro">
+                                    Otro
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Mensaje -->
+
+                        <div class="campo campo-completo">
+
+                            <label for="mensaje">
+                                Mensaje *
+                            </label>
+
+                            <textarea
+                                id="mensaje"
+                                name="mensaje"
+                                rows="6"
+                                placeholder="Escribe tu mensaje..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- Botón -->
+
+                        <button
+                            type="submit"
+                            class="boton-enviar"
+                        >
+                            <span>✈</span>
+                            Enviar mensaje
+                        </button>
+
+
+                    </form>
+
+                </article>
+
+
+                <!-- =================================
+                     INFORMACIÓN
+                     ================================= -->
+
+                <aside class="informacion-contacto">
+
+                    <div>
+
+                        <h2>
+                            Información de contacto
+                        </h2>
+
+                        <p>
+                            También puedes comunicarte con
+                            nosotros a través de los siguientes medios:
+                        </p>
+
+                    </div>
+
+
+                    <!-- Teléfono -->
+
+                    <section class="dato-contacto">
+
+                        <span class="icono-contacto">
+                            ☎
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Teléfono
+                            </h3>
+
+                            <p>
+                                +57 604 123 4567
+                            </p>
+
+                            <small>
+                                Lunes a viernes de 7:00 a.m. a 5:00 p.m.
+                            </small>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- Correo -->
+
+                    <section class="dato-contacto">
+
+                        <span class="icono-contacto">
+                            ✉
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Correo electrónico
+                            </h3>
+
+                            <p>
+                                info@vitrinajulietastyle.com
+                            </p>
+
+                            <small>
+                                Te responderemos en menos de 24 horas.
+                            </small>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- Dirección -->
+
+                    <section class="dato-contacto">
+
+                        <span class="icono-contacto">
+                            📍
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Dirección
+                            </h3>
+
+                            <p>
+                                Medellín, Colombia
+                            </p>
+
+                            <small>
+                                Visítanos en nuestras instalaciones.
+                            </small>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- Mapa -->
+
+                    <figure class="mapa">
+
+                        <img
+                            src="../img/mapa.png"
+                            alt="Ubicación de Vitrina Julieta Style en Medellín"
+                        >
+
+                    </figure>
+
+
+                </aside>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================================
+         PIE DE PÁGINA
+         ========================================= -->
+
+    <footer class="pie-pagina">
+
+        <div class="contenedor">
+
+            <p>
+                © 2026 Vitrina Julieta Style
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

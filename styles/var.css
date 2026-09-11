@@ -1,0 +1,79 @@
+:root {
+
+    /* =========================================
+       COLORES PRINCIPALES
+       Vitrina Julieta Style
+       ========================================= */
+
+    --color-azul-claro: #eaf4fb;
+
+    --color-azul-pastel: #d7eaf7;
+
+    --color-azul-medio: #8dbde2;
+
+    --color-azul-principal: #68a9dc;
+
+    --color-azul-hover: #4f95ca;
+
+    --color-azul-oscuro: #315b7d;
+
+
+    /* =========================================
+       COLORES GENERALES
+       ========================================= */
+
+    --color-blanco: #ffffff;
+
+    --color-fondo: #ffffff;
+
+    --color-fondo-suave: #f7fbfe;
+
+    --color-texto: #31506a;
+
+    --color-texto-suave: #60788c;
+
+    --color-borde: #c9ddec;
+
+
+    /* =========================================
+       SOMBRAS
+       ========================================= */
+
+    --sombra-suave: 0 4px 15px rgba(49, 91, 125, 0.10);
+
+    --sombra-tarjeta: 0 6px 18px rgba(49, 91, 125, 0.12);
+
+
+    /* =========================================
+       BORDES
+       ========================================= */
+
+    --radio-pequeno: 6px;
+
+    --radio-medio: 12px;
+
+    --radio-grande: 20px;
+
+    --radio-redondo: 50px;
+
+
+    /* =========================================
+       TIPOGRAFÍA
+       ========================================= */
+
+    --fuente-principal: Arial, Helvetica, sans-serif;
+
+
+    /* =========================================
+       ESPACIADOS
+       ========================================= */
+
+    --espacio-pequeno: 10px;
+
+    --espacio-medio: 20px;
+
+    --espacio-grande: 30px;
+
+    --espacio-extra: 50px;
+
+}
