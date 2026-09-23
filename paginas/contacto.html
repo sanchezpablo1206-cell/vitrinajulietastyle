@@ -7,8 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="Contáctanos - Vitrina Julieta Style">
+    <meta name="description" content="Contáctanos - Vitrina Julieta Style">
 
     <title>Contáctanos | Vitrina Julieta Style</title>
 
@@ -19,7 +18,7 @@
 
     <!-- Variables generales -->
     <link rel="stylesheet" href="../styles/inicio.css">
-      <link rel="stylesheet" href="../styles/var.css">
+    <link rel="stylesheet" href="../styles/var.css">
 
     <!-- Estilos exclusivos de contacto -->
     <link rel="stylesheet" href="../styles/contacto.css">
@@ -123,10 +122,7 @@
 
                     <figure class="banner-imagen">
 
-                        <img
-                            src="../img/banner_contacto.png"
-                            alt="Espacio de trabajo de Vitrina Julieta Style"
-                        >
+                        <img src="../img/banner_contacto.png" alt="Espacio de trabajo de Vitrina Julieta Style">
 
                     </figure>
 
@@ -176,58 +172,38 @@
 
                     <form class="formulario" action="#" method="post">
 
-
                         <!-- Nombre -->
-
                         <div class="campo">
 
                             <label for="nombre">
                                 Nombre completo *
                             </label>
 
-                            <input
-                                type="text"
-                                id="nombre"
-                                name="nombre"
-                                placeholder="Nombre completo"
-                                required
-                            >
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
 
                         </div>
 
 
                         <!-- Correo -->
-
                         <div class="campo">
 
                             <label for="correo">
                                 Correo electrónico *
                             </label>
 
-                            <input
-                                type="email"
-                                id="correo"
-                                name="correo"
-                                placeholder="Correo electrónico"
-                                required
-                            >
+                            <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
 
                         </div>
 
 
                         <!-- Asunto -->
-
                         <div class="campo campo-completo">
 
                             <label for="asunto">
                                 Asunto *
                             </label>
 
-                            <select
-                                id="asunto"
-                                name="asunto"
-                                required
-                            >
+                            <select id="asunto" name="asunto" required>
 
                                 <option value="">
                                     Selecciona un asunto
@@ -255,34 +231,23 @@
 
 
                         <!-- Mensaje -->
-
                         <div class="campo campo-completo">
 
                             <label for="mensaje">
                                 Mensaje *
                             </label>
 
-                            <textarea
-                                id="mensaje"
-                                name="mensaje"
-                                rows="6"
-                                placeholder="Escribe tu mensaje..."
-                                required
-                            ></textarea>
+                            <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje..."
+                                required></textarea>
 
                         </div>
 
 
                         <!-- Botón -->
-
-                        <button
-                            type="submit"
-                            class="boton-enviar"
-                        >
+                        <button type="button" class="boton-enviar" id="boton-enviar" >
                             <span>✈</span>
                             Enviar mensaje
                         </button>
-
 
                     </form>
 
@@ -394,10 +359,7 @@
 
                     <figure class="mapa">
 
-                        <img
-                            src="../img/mapa.png"
-                            alt="Ubicación de Vitrina Julieta Style en Medellín"
-                        >
+                        <img src="../img/mapa.png" alt="Ubicación de Vitrina Julieta Style en Medellín">
 
                     </figure>
 
@@ -407,6 +369,50 @@
 
             </div>
 
+        </section>
+
+
+        <section>
+            <!-- =========================================
+     MODAL DE MENSAJE EXITOSO
+     ========================================= -->
+
+            <div class="modal" id="modal-exito" role="dialog" aria-modal="true" aria-labelledby="titulo-modal">
+
+                <div class="modal-contenido">
+
+                    <button type="button" class="modal-cerrar" id="cerrar-modal" aria-label="Cerrar ventana">
+                        &times;
+                    </button>
+
+
+                    <div class="modal-icono">
+                        ✓
+                    </div>
+
+
+                    <h2 id="titulo-modal">
+                        ¡Mensaje enviado!
+                    </h2>
+
+
+                    <p id="mensaje-exito">
+                        Tu mensaje se envió correctamente.
+                    </p>
+
+
+                    <p class="modal-subtexto">
+                        Será revisado en breve.
+                    </p>
+
+
+                    <button type="button" class="boton-modal" id="boton-modal">
+                        Aceptar
+                    </button>
+
+                </div>
+
+            </div>
         </section>
 
 
@@ -429,7 +435,7 @@
 
     </footer>
 
-
+    <script src="../Js/contacto.js"></script>
 </body>
 
 </html>

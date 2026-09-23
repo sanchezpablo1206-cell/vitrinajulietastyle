@@ -581,6 +581,215 @@ img {
 
 
 /* =========================================
+   MODAL
+   ========================================= */
+
+.modal {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background-color: rgba(49, 91, 125, 0.45);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: all 0.3s ease;
+
+    z-index: 1000;
+}
+
+
+/* =========================================
+   MODAL VISIBLE
+   ========================================= */
+
+.modal.mostrar {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+/* =========================================
+   CONTENIDO DEL MODAL
+   ========================================= */
+
+.modal-contenido {
+    position: relative;
+
+    width: 100%;
+
+    max-width: 480px;
+
+    padding: 40px 35px;
+
+    background-color: var(--color-blanco);
+
+    border-radius: var(--radio-medio);
+
+    box-shadow: 0 10px 35px rgba(49, 91, 125, 0.25);
+
+    text-align: center;
+
+    transform: translateY(-20px);
+
+    transition: transform 0.3s ease;
+}
+
+
+.modal.mostrar .modal-contenido {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   BOTÓN CERRAR
+   ========================================= */
+
+.modal-cerrar {
+    position: absolute;
+
+    top: 12px;
+    right: 15px;
+
+    width: 35px;
+    height: 35px;
+
+    border: none;
+
+    background-color: transparent;
+
+    color: var(--color-texto-suave);
+
+    font-size: 28px;
+
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+
+.modal-cerrar:hover {
+    color: var(--color-azul-oscuro);
+}
+
+
+/* =========================================
+   ICONO DEL MODAL
+   ========================================= */
+
+.modal-icono {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-azul-claro);
+
+    border: 2px solid var(--color-azul-medio);
+
+    border-radius: 50%;
+
+    color: var(--color-azul-principal);
+
+    font-size: 38px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   TÍTULO
+   ========================================= */
+
+.modal-contenido h2 {
+    margin-bottom: 12px;
+
+    color: var(--color-azul-oscuro);
+
+    font-size: 28px;
+}
+
+
+/* =========================================
+   MENSAJE
+   ========================================= */
+
+#mensaje-exito {
+    margin-bottom: 8px;
+
+    color: var(--color-texto);
+
+    font-size: 17px;
+
+    line-height: 1.5;
+}
+
+
+.modal-subtexto {
+    margin-bottom: 25px;
+
+    color: var(--color-texto-suave);
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   BOTÓN ACEPTAR
+   ========================================= */
+
+.boton-modal {
+    padding: 12px 35px;
+
+    border: none;
+
+    border-radius: var(--radio-redondo);
+
+    background-color: var(--color-azul-principal);
+
+    color: var(--color-blanco);
+
+    font-family: var(--fuente-principal);
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.boton-modal:hover {
+    background-color: var(--color-azul-hover);
+
+    transform: translateY(-2px);
+
+    box-shadow: var(--sombra-tarjeta);
+}
+
+
+/* =========================================
    RESPONSIVE
    ========================================= */
 
